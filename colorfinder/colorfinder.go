@@ -7,6 +7,7 @@ package colorfinder
 import (
 	"fmt"
 	"image"
+	"image/color"
 	"io"
 	"log"
 	"math"
@@ -14,14 +15,12 @@ import (
 	"os"
 	"strings"
 
-	"image/color"
-
 	// Load supported image formats
 	_ "image/gif"
 	_ "image/jpeg"
 	_ "image/png"
 
-	_ "github.com/mat/besticon/ico"
+	_ "github.com/sev3ryn/besticon/v3/ico"
 )
 
 func main() {
